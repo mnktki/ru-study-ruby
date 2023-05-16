@@ -1,4 +1,4 @@
-require './test/test_helper'
+require './test/test_helper' 
 require_relative './solution'
 
 class Exercise::ArraysTest < Minitest::Test
@@ -13,6 +13,7 @@ class Exercise::ArraysTest < Minitest::Test
   # Реализовать двоичный поиск
   # Функция должна возвращать индекс элемента
   def test_bin_search
+    assert Exercise::Arrays.search([1, 4, 5, 7, 8, 9], 9) == 5
     assert Exercise::Arrays.search([1], 900) == -1
     assert Exercise::Arrays.search([1], 1).zero?
     assert Exercise::Arrays.search([], 900) == -1
