@@ -1,4 +1,4 @@
-module Exercise
+module Exercise 
   module Arrays
     class << self
       def replace(array)
